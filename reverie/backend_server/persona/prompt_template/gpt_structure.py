@@ -17,6 +17,9 @@ def temp_sleep(seconds=0.1):
   time.sleep(seconds)
 
 def ChatGPT_single_request(prompt): 
+  """
+  Used in plan.py, this function takes in a prompt, such as plan for day, and returns the response. 
+  """
   temp_sleep()
 
   completion = openai.ChatCompletion.create(
